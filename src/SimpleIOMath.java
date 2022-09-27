@@ -9,6 +9,7 @@ public class SimpleIOMath {
     private int age;
     private int favNumber;
 
+    //check for primeness
     private boolean isPrime(int intToCheckForPrimality){
         for(int i = 2; i <= (Math.sqrt(intToCheckForPrimality + 1)); i++){
             if(intToCheckForPrimality % i == 0) {
@@ -17,11 +18,13 @@ public class SimpleIOMath {
         }
         return true;
     }
+    //check for factorness
     private boolean isFactor(int intToDivide, int intToBeCheckedForFactor){
         return intToBeCheckedForFactor % intToDivide == 0;
     }
 
     private int firstPrimeFactor(int intToFindFirstPrimeFactor) {
+        //must satisfy 1: is factor, 2: is prime
         for (int i = 2; i <= intToFindFirstPrimeFactor; i++) {
             if (isPrime(i) && isFactor(i, intToFindFirstPrimeFactor)){
                 return (i);
@@ -52,11 +55,19 @@ public class SimpleIOMath {
         System.out.println("Your name is: " + name);
         System.out.println("Your age is: " + age);
         System.out.println("At your next birthday, you will turn " + (age + 1));
+        //calls firstPrimeFactor
         System.out.println("The first prime factor of " + age + " is: " + firstPrimeFactor(age));
         System.out.println("Your favorite number is: " + favNumber);
         System.out.println("Your favorite number squared is: " + favNumber * favNumber);
         System.out.println("* end of program *");
     }
+
+    /**
+     * create object app
+     * call promptUser() to get user input values (int, int, String)
+     * call printInfo to p[rint the info back to user
+     * @param args none
+     */
     public static void main(String[] args){
         SimpleIOMath app  = new SimpleIOMath();
         app.promptUser();
