@@ -10,6 +10,7 @@ public class SimpleIOMath {
     private int favNumber;
 
     //check for primeness
+    //only need to check numbers up to sqrt(i+1)
     private boolean isPrime(int intToCheckForPrimality){
         for(int i = 2; i <= (Math.sqrt(intToCheckForPrimality + 1)); i++){
             if(intToCheckForPrimality % i == 0) {
