@@ -15,9 +15,9 @@ public class SimpleIOMath {
     /**
      * @return Whether the input is prime
      */
-    private boolean isPrime(int intToCheckForPrimality){
-        for(int i = 2; i <= (Math.sqrt(intToCheckForPrimality + 1)); i++){
-            if(intToCheckForPrimality % i == 0) {
+    private boolean isPrime(int num){
+        for(int i = 2; i <= (Math.sqrt(num + 1)); i++){
+            if(num % i == 0) {
                 return false;
             }
         }
@@ -25,27 +25,25 @@ public class SimpleIOMath {
     }
 
     /**
-     * @param intToDivide the number that is to be incremented
-     * @param intToBeCheckedForFactor Check whether is a factor of intToDivide
-     * @return wheter it is a factor
+     * @return whether p is a factor of q
      */
-    private boolean isFactor(int intToDivide, int intToBeCheckedForFactor){
-        return intToBeCheckedForFactor % intToDivide == 0;
+    private boolean isFactor(int p, int q){
+        return q % p == 0;
     }
 
     /**
      *
-     * @param intToFindFirstPrimeFactor Method finds the first prime factor of this int
+     * @param num Method finds the first prime factor of this int
      * @return the first prime factor as an int
      */
-    private int firstPrimeFactor(int intToFindFirstPrimeFactor) {
+    private int firstPrimeFactor(int num) {
         //must satisfy 1: is factor, 2: is prime
-        for (int i = 2; i <= intToFindFirstPrimeFactor; i++) {
-            if (isPrime(i) && isFactor(i, intToFindFirstPrimeFactor)){
+        for (int i = 2; i <= num; i++) {
+            if (isPrime(i) && isFactor(i, num)){
                 return (i);
             }
         }
-        return(intToFindFirstPrimeFactor);
+        return(num);
     }
 
     public void promptUser() throws InterruptedException{

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f43938b-b4a7-4acd-96e3-161478d50104" name="Changes" comment="Comments and cleanup">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleIOMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleIOMath.java" afterDir="false" />
-    </list>
+    <list default="true" id="7f43938b-b4a7-4acd-96e3-161478d50104" name="Changes" comment="Comments and cleanup" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +54,7 @@
       <workItem from="1664291331601" duration="326000" />
       <workItem from="1664291681684" duration="3250000" />
       <workItem from="1664296798128" duration="1609000" />
+      <workItem from="1665026894179" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1664294683677</created>
